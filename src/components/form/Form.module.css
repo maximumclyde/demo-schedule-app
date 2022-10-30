@@ -1,0 +1,384 @@
+.main {
+    height: fit-content;
+    max-height: 80vh;
+    width: 22em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 1.5em 0.5em rgba(0,0,0,0.3);
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.main form {
+    height: fit-content;
+    width: 100%;
+}
+
+@media(max-width: 961px) {
+    .main {
+        height: fit-content;
+        width: calc(100% - 1em);
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background: #fff;
+        border-radius: 1em;
+        box-shadow: 0 0 1.5em 0.5em rgba(0,0,0,0.3);
+        display: block;
+    }
+    .main form {
+        height: fit-content;
+        width: calc(100% - 1em);
+    }
+}
+
+@keyframes formAppear {
+    from {
+        transform: translateY(-40%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.eventBg {
+    background-color: var(--rose);
+}
+
+.lectureBg {
+    background-color: var(--purple);
+}
+
+.meetingBg {
+    background-color: var(--blue);
+}
+
+.birthdayBg {
+    background-color: red;
+}
+
+/*
+*
+*   THE TITLE LINE
+*
+*/
+
+.titleLine {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.typeIndicator {
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+.title {
+    width: calc(100% - 1.5em);
+    font-size: 1.3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgba(0,0,0,1);
+}
+
+
+/*
+*
+*   THE TYPE LINE
+*
+*/
+
+.typeLine {
+    height: 3em;
+    margin-top: 0.5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.type {
+    font-size: 1em;
+    cursor: pointer;
+    background: unset;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border: 3px solid var(--blue);
+}
+
+.type:hover {
+    background: rgba(0,0,255,0.1);
+}
+
+.selectedType {
+    background: rgba(0,0,255,0.4);
+    color: #fff;
+}
+
+/*
+*
+*   THE DATE-TIME LINE
+*
+*/
+
+.dateTimeLine {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dateTime {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateSeparator {
+    height: 0;
+    width: 80%;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.dateTime span {
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: default;
+}
+
+.date {
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    width: 7em;
+    text-align: center;
+}
+
+.time {
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    width: 4em;
+    text-align: center;
+    margin-left: 0.5em;
+}
+
+.dateTimePicker {
+    height: fit-content;
+    width: 100%;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dateViewer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dateViewer span {
+    cursor: pointer;
+}
+
+.otherDate {
+    font-size: .7em;
+    padding: 0.5em;
+    color: rgba(0,0,0,0.7);
+}
+
+.currentDate {
+    font-weight: bold;
+}
+
+.currentTime {
+    width: 2.5em;
+    margin: .2em;
+    outline: none;
+    text-align: center;
+    padding: .1em;
+    font-weight: bold;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+}
+
+
+/*
+*
+*   STYLE FOR THE REPETITION LINE
+*
+*/
+
+.repetitionLine {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repetitionLine span {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.repetitionLine select {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.4);
+    font-size: 1.1em;
+    padding: 0.1em;
+    text-align: center;
+    outline: none;
+}
+
+/*
+*
+*   STYLE FOR THE FREQUENCY LINE
+*
+*/
+
+.frequencyLine {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frequencyFrase {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.innerFrase {
+    margin-top: .2em;
+}
+
+.frequencyFrase input[type="number"] {
+    text-align: center;
+    width: 3em;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.weekdaysLine {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weekdaysLine span {
+    font-size: 0.7em;
+}
+
+/*
+*
+*   STYLE FOR TE DESCRIPTION LINE
+*
+*/
+
+.descriptionLine {
+    height: 7em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.descriptionLine textarea {
+    height: 5.5em;
+    width: 90%;
+    outline: none;
+    resize: none;
+    padding: .3em;
+}
+
+
+/*
+*
+*   STYLES FOR THE EXTRA LINE
+*
+*/
+
+.extraLine {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+*
+*   STYLES FOR THE BUTTONS
+*
+*/
+
+.buttonsLine {
+    margin-top: 1em;
+    height: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.actionButton {
+    height: 100%;
+    width: 40%;
+    border: 0;
+    background: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.actionButton svg {
+    height: 2em;
+    width: 2em;
+}
+
+.actionButton:hover {
+    background: rgba(0,0,0,0.1);
+}

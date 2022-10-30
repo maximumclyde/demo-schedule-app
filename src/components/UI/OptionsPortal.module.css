@@ -1,0 +1,73 @@
+.backdrop {
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: showBackdrop 0.3s ease forwards;
+}
+
+.frame {
+    height: calc(100vh - (4em + 3px));
+    width: 90%;
+    background: white;
+    z-index: 6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: fixed;
+    top: calc(4em + 3px);
+    left: 0;
+    animation: showOptions 0.3s ease forwards;
+}
+
+@media(min-width: 961px) {
+    .backdrop {
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        position: fixed;
+        top: 0;
+        left: 0;
+        animation: showBackdrop 0.3s ease forwards;
+    }
+    
+    .frame {
+        height: calc(100vh - (4em + 3px));
+        width: 20%;
+        background: white;
+        z-index: 6;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        position: fixed;
+        top: calc(4em + 3px);
+        left: 0;
+        animation: showOptions 0.3s ease forwards;
+    }
+}
+
+@keyframes showBackdrop {
+    from {
+        background: rgba(0,0,0,0);
+    }
+    to {
+        background: rgba(0,0,0,0.3);
+    }
+}
+
+@keyframes showOptions {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,80 @@
+.backdrop {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 4;
+    animation: backdropShow 0.3s ease forwards;
+}
+
+.mainFrame {
+    position: fixed;
+    top: 5em;
+    left: .5em;
+    height: fit-content;
+    max-height: calc(100vh - 5em);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100% - 1em);
+    animation: modalShowOnPhone 0.3s ease forwards;
+    border-radius: 1em;
+    box-shadow: 0 0 1.5em 0.5em rgba(0,0,0,0.3);
+    z-index: 5;
+}
+
+@media(min-width:961px) {
+    .backdrop {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 4;
+        animation: backdropShow 0.3s ease forwards;
+    }
+
+    .mainFrame {
+        position: fixed;
+        top: calc(50% + 2em);
+        left: 50%;
+        transform: translateX(-50%);
+        height: fit-content;
+        width: fit-content;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        box-shadow: 0 0 1.5em 0.5em rgba(0,0,0,0.3);
+        animation: modalShow 0.3s ease forwards;
+    }
+
+}
+
+@keyframes backdropShow {
+    from {
+        background: rgba(0,0,0,0);
+    }
+    to {
+        background: rgba(0,0,0,0.3);
+    }
+}
+
+@keyframes modalShow {
+    from {
+        transform: translateY(-100%) translateX(-50%);
+    }
+    to {
+        transform: translateY(-50%) translateX(-50%);
+    }
+}
+
+@keyframes modalShowOnPhone {
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}

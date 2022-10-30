@@ -1,0 +1,66 @@
+.mainFrame {
+    height: 95vh;
+    width: 15%;
+    position: absolute;
+    top: calc(5vh + 3px);
+    overflow: hidden;
+    background: var(--white);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    transition: left 0.5s ease-in-out;
+}
+
+.hide {
+    left: -15%;
+}
+
+.show {
+    left: 0;
+}
+
+.mainFrame button {
+    min-height: 3rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    transition: padding-top 0.4s ease-in-out, padding-bottom 0.4s ease-in-out; 
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+.mainFrame button:hover {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.mainFrame button span {
+    font-size: 1.2rem;
+    overflow:hidden;
+
+}
+
+.option {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background: white;
+    border-bottom: 1px solid grey;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid grey;
+    background-color: var(--sand-yellow);
+}

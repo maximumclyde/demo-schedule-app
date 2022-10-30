@@ -1,0 +1,32 @@
+.date {
+    width: auto;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+
+.today {
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: default;
+}
+
+@media(min-width:961px) {
+    .date {
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+    }
+
+    .today {
+        font-size: 1.15rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+}

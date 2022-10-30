@@ -1,0 +1,16 @@
+.card{
+    height: fit-content;
+    width: 90%;
+    padding: 5%;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+    transition: padding-top 0.2s ease-in-out, padding-bottom 0.2s ease-in-out;
+}
+
+.card:hover {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}

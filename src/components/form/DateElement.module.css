@@ -1,0 +1,50 @@
+.frame {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frame input[type='text'] {
+    width: 5.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    border: 0;
+    margin: 0.2em;
+    outline: none;
+}
+
+.frame span {
+    width: 5em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.frame input[type='text']:focus {
+    border: 2px solid var(--blue);
+    margin: calc(0.2em - 2px);
+}
+
+.frame button {
+    font-size: .7em;
+    padding: 0.5em;
+    color: rgba(0,0,0,0.7);
+    border:0;
+    background: #fff;
+    cursor: pointer;
+}
+
+.setHide {
+    opacity: 0;
+    display: none;
+}
+
+.setShow {
+    opacity: 1;
+}

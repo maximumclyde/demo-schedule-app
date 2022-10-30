@@ -1,0 +1,49 @@
+.eventTitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    overflow: hidden;
+    cursor: default;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+}
+
+.eventDescription {
+    color: var(--grey);
+    height: fit-content;
+    cursor: default;
+}
+
+.time {
+    margin-top: 1%;
+    font-size: 0.9rem;
+    cursor: default;
+    color: black;
+}
+
+.typeColor {
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+.eventBg {
+    background-color: var(--rose);
+}
+
+.lectureBg {
+    background-color: var(--purple);
+}
+
+.meetingBg {
+    background-color: var(--blue);
+}
+
+.birthdayBg {
+    background-color: red;
+}

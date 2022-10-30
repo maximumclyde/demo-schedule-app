@@ -1,0 +1,74 @@
+.frame {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.frame input[type='text'] {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid black;
+    width: 8em;
+    outline: none;
+    font-size: 1.2em;
+    padding-left: .3em;
+}
+
+.profResultContainer {
+    height: fit-content;
+    max-height: 10em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 10em;
+    position: absolute;
+    top: 11.76em;
+    left: 3.1em;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+}
+
+.profResult {
+    height: 2em;
+    width: calc(100% - 2px);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.5);
+    background: white;
+    cursor: pointer;
+}
+
+.inner {
+    height: fit-content;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner span {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.inner input[type='number'] {
+    width: 3em;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin-top: .2em;
+    outline: none;
+}

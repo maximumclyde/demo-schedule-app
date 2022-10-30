@@ -1,0 +1,110 @@
+.dateFrame {
+    height: calc(100% / 6 - 1px);
+    width: calc(100% / 7 - 1px);
+    border-right: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dateNumber {
+    cursor: default;
+    height: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.moreEvents::after {
+    content: '...';
+    position: relative;
+    top: 0;
+    left: 15%;
+    font-size: 1em;
+    color: var(--red);
+}
+
+
+.dateFrame table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.dateNumberOtherM {
+    cursor: default;
+    color: grey;
+    height: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.dateNumberToday {
+    background: rgba(0,0,0,0.2);
+}
+
+.row {
+    height: 2em;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.row td {
+    cursor: default;
+    text-align: left;
+    font-size: 0.7em;
+    border-radius: 0;
+    border: 1px solid inherit;
+    overflow: hidden;
+    color: white;
+    font-weight:normal;
+    letter-spacing: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media(min-width:961px) {
+    .row {
+        height: calc(100% / 4);
+        width: 100%;
+        overflow: hidden;
+    
+    }
+    
+    .row td {
+        cursor: default;
+        text-align: left;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        border: 1px solid inherit;
+        overflow: hidden;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+.eventBg {
+    background-color: var(--rose);
+}
+
+.lectureBg {
+    background-color: var(--purple);
+}
+
+.meetingBg {
+    background-color: var(--blue);
+}
+
+.birthdayBg {
+    background-color: red;
+}

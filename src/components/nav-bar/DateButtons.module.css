@@ -1,0 +1,84 @@
+.mainFrame {
+    width: calc(100% - 2em);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: default;
+}
+
+.buttonFrame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+}
+
+.buttonFrame button {
+    border: 0;
+    background: none;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+}
+
+.buttonFrame button svg {
+    height: 100%;
+    width: 100%;
+    fill: black;
+}
+
+@media(min-width: 961px) {
+    .mainFrame {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .dateTitle {
+        font-size: 1.7em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-left: 5%;
+        cursor: default;
+    }
+
+    .buttonFrame {
+        width: 7%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-right: 5%;
+    }
+
+    .buttonFrame button {
+        border: 0;
+        background: none;
+        height: 2rem;
+        width: 2rem;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .buttonFrame button:hover {
+        background: rgba(0,0,0,0.1);
+    }
+
+    .buttonFrame button svg {
+        height: 100%;
+        width: 100%;
+        fill: black;
+    }
+
+}

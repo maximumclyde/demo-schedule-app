@@ -1,0 +1,48 @@
+.frame {
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.frame input[type='text'] {
+    font-size: 1.2em;
+    width: 7em;
+    padding-left: .3em;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.workerResultContainer {
+    height: fit-content;
+    max-height: 10em;
+    overflow-y: auto;
+    width: 10em;
+    position: absolute;
+    top: 11.3em;
+    left: 1.55em;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.3);
+}
+
+.workerResult {
+    height: 2em;
+    width: calc(100% - 2px);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    background: white;
+    cursor: pointer;
+}
