@@ -1,5 +1,19 @@
 import { useState, useEffect } from 'react';
-import * as WeatherIcons from 'react-icons/wi';
+import {
+    WiDaySunny,
+    WiMoonAltWaningCrescent2,
+    WiDayCloudy,
+    WiNightAltCloudy,
+    WiCloud,
+    WiCloudy,
+    WiDayShowers,
+    WiNightShowers,
+    WiDayRain,
+    WiNightRain,
+    WiThunderstorm,
+    WiSnowflakeCold,
+    WiFog
+} from 'react-icons/wi';
 import { TbMapPinOff } from 'react-icons/tb';
 
 import useGetCoords from '../../hooks/useGetCoords';
@@ -15,6 +29,7 @@ const NavWeather = ()=>{
 
     useEffect(() => {
         if(!locationObject.permission) {
+            // setWeatherIcon(<TbMapPinOff />);
             return;
         }
 
@@ -30,49 +45,60 @@ const NavWeather = ()=>{
                 let i = data.weather[0].icon;
                 setTemperature(data.main.temp);
 
-                switch (i) {
-                    case '01d' :
-                        setWeatherIcon(<WeatherIcons.WiDaySunny />);
-                        break;
-                    case '01n' :
-                        setWeatherIcon(<WeatherIcons.WiMoonAltWaningCrescent2 />);
-                        break;
-                    case '02d' :
-                        setWeatherIcon(<WeatherIcons.WiDayCloudy />);
-                        break;
-                    case '02n' :
-                        setWeatherIcon(<WeatherIcons.WiNightAltCloudy />);
-                        break;
-                    case '03d' || '03n' :
-                        setWeatherIcon(<WeatherIcons.WiCloud />);
-                        break;
-                    case '04d' || '04n' :
-                        setWeatherIcon(<WeatherIcons.WiCloudy />);
-                        break;
-                    case '09d' :
-                        setWeatherIcon(<WeatherIcons.WiDayShowers />);
-                        break;
-                    case '09n' :
-                        setWeatherIcon(<WeatherIcons.WiNightShowers />);
-                        break;
-                    case '10d' :
-                        setWeatherIcon(<WeatherIcons.WiDayRain />);
-                        break;
-                    case '10n' :
-                        setWeatherIcon(<WeatherIcons.WiNightRain />);
-                        break;
-                    case '11d' || '11n' :
-                        setWeatherIcon(<WeatherIcons.WiThunderstorm />);
-                        break;
-                    case '13d' || '13n' :
-                        setWeatherIcon(<WeatherIcons.WiSnowflakeCold />);
-                        break;
-                    case '50d' || '50n' :
-                        setWeatherIcon(<WeatherIcons.WiFog />);
-                        break;
-                    default:
-                        setWeatherIcon(<TbMapPinOff />);
+                if (i === '01d') {
+                    setWeatherIcon(<WiDaySunny />);
                 }
+                    
+                else if (i === '01n') {
+                    setWeatherIcon(<WiMoonAltWaningCrescent2 />);
+                }
+                    
+                else if (i === '02d') {
+                    setWeatherIcon(<WiDayCloudy />);
+                }
+                    
+                else if (i === '02n') {
+                    setWeatherIcon(<WiNightAltCloudy />);
+                }
+                    
+                else if(i === '03d' || i === '03n') {
+                    setWeatherIcon(<WiCloud />);
+                }
+                    
+                else if(i === '04d' || i === '04n') {
+                    setWeatherIcon(<WiCloudy />);
+                }
+                    
+                else if (i === '09d') {
+                    setWeatherIcon(<WiDayShowers />);
+                }
+                    
+                else if (i === '09n') {
+                    setWeatherIcon(<WiNightShowers />);
+                }
+                    
+                else if (i === '10d') {
+                    setWeatherIcon(<WiDayRain />);
+                }
+                    
+                else if (i === '10n') {
+                    setWeatherIcon(<WiNightRain />);
+                }
+                    
+                else if(i === '11d' || i === '11n') {
+                    setWeatherIcon(<WiThunderstorm />);
+                }
+                    
+                else if(i === '13d' || i === '13n') {
+                    setWeatherIcon(<WiSnowflakeCold />);
+                }
+                    
+                else if(i === '50d' || i === '50n') {
+                    setWeatherIcon(<WiFog />);
+                }
+                    
+                else
+                    setWeatherIcon(<TbMapPinOff />);
 
             } catch(err) {
                 console.log(err);
