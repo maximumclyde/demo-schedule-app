@@ -11,12 +11,12 @@ export const DUMMY_EVENTS = [
         description: 'This is a dummy description for the sake of developement',
         startDay: {
             date: 3,
-            month: 9,
+            month: 10,
             year: 2022
         },
         endDay: {
             date: 6,
-            month: 9,
+            month: 10,
             year: 2022
         },
         startTime: '00:00',
@@ -33,12 +33,12 @@ export const DUMMY_EVENTS = [
         description: 'This is a dummy description for the sake of developement',
         startDay: {
             date: 1,
-            month: 9,
+            month: 10,
             year: 2022
         },
         endDay: {
             date: 2,
-            month: 10,
+            month: 11,
             year: 2022
         },
         startTime: '09:00',
@@ -55,12 +55,12 @@ export const DUMMY_EVENTS = [
         description: 'This is a dummy description for the sake of developement',
         startDay: {
             date: 3,
-            month: 9,
+            month: 10,
             year: 2022
         },
         endDay: {
             date: 6,
-            month: 9,
+            month: 10,
             year: 2022
         },
         startTime: '14:00',
@@ -77,12 +77,12 @@ export const DUMMY_EVENTS = [
         description: 'This is a dummy description for the sake of developement',
         startDay: {
             date: 18,
-            month: 9,
+            month: 10,
             year: 2022
         },
         endDay: {
             date: 18,
-            month: 9,
+            month: 10,
             year: 9999
         },
         startTime: '00:00',
@@ -99,12 +99,12 @@ export const DUMMY_EVENTS = [
         description: 'This is a dummy description for the sake of developement',
         startDay: {
             date: 3,
-            month: 10,
+            month: 11,
             year: 2022
         },
         endDay: {
             date: 4,
-            month: 10,
+            month: 11,
             year: 2022
         },
         startTime: '14:00',
