@@ -10,12 +10,12 @@ export const DUMMY_EVENTS = [
         title: 'Event Title 1',
         description: 'This is a dummy description for the sake of developement',
         startDay: {
-            date: 3,
-            month: 10,
+            date: 31,
+            month: 9,
             year: 2022
         },
         endDay: {
-            date: 6,
+            date: 3,
             month: 10,
             year: 2022
         },
@@ -54,12 +54,12 @@ export const DUMMY_EVENTS = [
         title: 'Event Title 3',
         description: 'This is a dummy description for the sake of developement',
         startDay: {
-            date: 3,
+            date: 1,
             month: 10,
             year: 2022
         },
         endDay: {
-            date: 6,
+            date: 4,
             month: 10,
             year: 2022
         },
@@ -76,12 +76,12 @@ export const DUMMY_EVENTS = [
         title: 'Event Title 4',
         description: 'This is a dummy description for the sake of developement',
         startDay: {
-            date: 18,
+            date: 16,
             month: 10,
             year: 2022
         },
         endDay: {
-            date: 18,
+            date: 16,
             month: 10,
             year: 9999
         },
@@ -98,12 +98,12 @@ export const DUMMY_EVENTS = [
         title: 'Event Title 5',
         description: 'This is a dummy description for the sake of developement',
         startDay: {
-            date: 3,
+            date: 6,
             month: 11,
             year: 2022
         },
         endDay: {
-            date: 4,
+            date: 7,
             month: 11,
             year: 2022
         },
